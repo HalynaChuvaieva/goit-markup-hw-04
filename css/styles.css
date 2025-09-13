@@ -89,15 +89,30 @@ img{
     color: #2E2F42;
     font-weight: 500;
     line-height: 1.5;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link::after{
+    display: block;
+    content: "";
+    transition-property: width, height, border-radius, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover::after{
-    display: block;
-    content: "";
     width: 48px;
     height: 4px;
     border-radius: 2px;
     background-color: #404BBF;
+}
+
+.contacts{
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -149,14 +164,17 @@ img{
     line-height: 1.5;
     letter-spacing: 0.04em;
     background: #4d5ae5;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
-    background: #404bbf;
+    background-color: #404bbf;
 }
 
 .button:focus {
-    background: #404bbf;
+    background-color: #404bbf;
 }
 
 .section-title {
@@ -249,6 +267,9 @@ img{
 
 .app-card{
     width: calc((100% - 24*2)/3);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app-card:hover{
