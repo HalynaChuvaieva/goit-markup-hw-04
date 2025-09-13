@@ -248,6 +248,15 @@ img{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.social-media{
+    max-width: 232px;
+    max-height: 40px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+
 .name {
     margin-bottom: 8px;
     color: #2E2F42;
@@ -361,13 +370,7 @@ img{
         overflow: hidden;
 }
 
-.social-media{
-    max-width: 232px;
-    max-height: 40px;
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-}
+
 
 .media-icon{
     fill: #F4F4FD;
