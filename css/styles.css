@@ -36,7 +36,15 @@ img{
 }
 
 .header{
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid #e7e9fc;
+}
+
+.header-menu:nth-child(1){
+    position: relative;
+    color: #404bbf;
 }
 
 .nav-container{
@@ -95,6 +103,13 @@ img{
 }
 
 .nav-link::after{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
     display: block;
     content: "";
     transition-property: width, height, border-radius, background-color;
@@ -142,11 +157,13 @@ img{
 }
 
 .first-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     padding: 188px 0;
     background-color: #2E2F42;
-    background-size: 1440рх;
+    max-width: 1440px;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .button {
@@ -196,6 +213,11 @@ img{
 }
 
 .icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
     background-color: #f4f4fd;
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -207,7 +229,7 @@ img{
 }
 
 .feature {
-    margin: 8px 0;
+    margin-bottom: 8px;
     letter-spacing: 0.02em;
     color: #2E2F42;
     font-weight: 500;
@@ -263,12 +285,15 @@ img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover{
+.social-link:hover, .social-link:focus{
     background-color: #404BBF;
 }
 
@@ -370,7 +395,12 @@ img{
 
 .page-footer .container{
     display: flex;
+    align-items: baseline;
     gap: 120px;
+}
+
+.page-logo-paragraph{
+    margin-right: 120px;
 }
 
 .footer-social-media{
@@ -378,6 +408,7 @@ img{
     letter-spacing: 0.02em;
     line-height: 24px;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .container-footer-media{
@@ -399,19 +430,16 @@ img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link-footer:hover{
+.social-link-footer:hover, .social-link-footer:focus{
     background-color: #31D0AA;
-}
-
-.column-container{
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
 }
 
 .media-icon {
