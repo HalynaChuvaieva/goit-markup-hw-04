@@ -353,7 +353,7 @@ img{
 }
 
 .overlay{
-    padding: 40px 32px 164px;
+    padding: 40px 32px;
     color: #F4F4FD;
     letter-spacing: 0.02em;
     line-height: 24px;
@@ -363,7 +363,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translateY(101%);
+    transform: translateY(100%);
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -402,9 +402,8 @@ img{
 .page-footer .container{
     display: flex;
     align-items: baseline;
-    display: flex;
-    align-items: center;
 }
+
 
 .page-logo-paragraph{
     margin-right: 120px;
