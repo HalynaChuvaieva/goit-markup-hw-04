@@ -401,8 +401,7 @@ img{
 
 .page-footer .container{
     display: flex;
-    align-items: center;
-    gap: 120px;
+    align-items: baseline;
     display: flex;
     align-items: center;
 }
