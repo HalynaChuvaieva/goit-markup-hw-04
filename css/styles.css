@@ -401,8 +401,10 @@ img{
 
 .page-footer .container{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 120px;
+    display: flex;
+    align-items: center;
 }
 
 .page-logo-paragraph{
